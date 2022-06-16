@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container1{
+            border: 1px solid black;
+            background-color: black;
+            height: 45px;
+            width: 100%;
+        }
+        #container2{
+         display: flex;
+         gap: 20px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         height: 33px;
+         border-left: none;
+         border-right: none;
+        }
+        #categories1{
+          display: flex;
+          margin-left: 150px;
+        }
+        #categories1>p:hover{
+            border-bottom-color: red;
+        }
+        #categories2{
+          display: flex;
+        }
+        .p1{
+          border: 1px solid black;
+          border-top: none;
+          border-left: none;
+          border-bottom: none;
+          padding: 0px 15px 0px 13px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          margin-top: 9px;
+          margin-bottom: 9px;
+          cursor: pointer;
+          border-bottom-style: solid;
+          border-bottom-color: white;
+        }
+        #tech{
+            border: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            padding: 7px 15px 0px 13px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            border-bottom-color: white;
+            /* margin-top: 9px;
+            margin-bottom: 9px; */
+        }
+        #tech:hover{
+            border-bottom-color: red;
+            /* margin-bottom: ; */
+        }
+        #crypto{
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            border: 1px solid rgb(7, 84, 152);
+            background-color: rgb(7, 84, 152);
+            color: white;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        #netra{
+            height: 25px;
+            width: 100px;
+            margin-left: 30px;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        #netra>img{
+            height: 100%;
+            width: 100%;
+        }
+        #box1{
+            height: 650px;
+            width: 650px;
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        #poster{
+            height: 60%;
+            width: 100%;
+            /* position: absolute; */
+        }
+        #heading{
+            font-size: 25px;
+            margin-top: 25px;
+            font-size: 26px;
+            margin-left: 10px;
+            /* border: 1px solid white; */
+            /* background-color: white; */
+        }
+        #box2{
+            height: 200px;
+            width: 636px;
+            margin-left: 211px;
+            margin-top: -299px;
+            /* border: 1px solid red; */
+            background-color: white;
+            position: relative;
+            /* border: 1px solid red; */
+        }
+        #des{
+            margin-top: 12px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 10px;
+        }
+        #email{
+            height: 230px;
+            width: 300px;
+            border: 1px solid rgb(36, 34, 34);
+            margin-top: 400px;
+            margin-left: 160px;
+        }
+        #email>h3{
+           font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 10px;
+        }
+        #p1{
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 12px;
+            color: rgb(198, 196, 196);
+            margin-left: 10px;
+        }
+        #container3{
+            /* height: auto; */
+            width: 710px;
+            margin-left: -60px;
+            /* border: 1px solid red; */
+        }
+        #merg{
+            display: flex;
+            overflow: scroll;
+            height: 650px;
+            /* border: 2px solid red; */
+            width: 100%;
+        }
+        #p2{
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        #p3{
+            margin-top: 10px;
+            border: 1px solid rgb(250, 214, 95);
+            background-color: rgb(250, 214, 95);
+            padding: 4px 0px 4px 20px;
+            margin-left: 10px;
+            margin-right: 170px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        #email_value{
+            margin-top: 5px;
+            height: 25px;
+            width: 260px;
+            margin-left: 10px;
+        }
+        #news_bar{
+            margin-top: 65px;
+        }
+        #box_right{
+            height: 200px;
+            width: 300px;
+            border: 1px solid black;
+            margin-left: 160px;
+        }
+        #heading_right{
+            margin-top: 6px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        #des_right{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #most{
+            height: 15px;
+            width: 130px;
+            border: 6px solid rgb(250, 214, 95);
+            margin-left: 160px;
+            /* margin-top: 10px; */
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            margin-bottom: -67px;
+        }
+        #most_h3{
+            margin-left: 160px;
+            margin-bottom: -21px;
+            margin-top: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 23px;
+        }
+        #tag{
+            margin-top: 7px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 5px;
+            font-size: 16px;
+            margin-bottom: -6px;
+        }
+        #line{
+            border: 4px solid rgb(250, 214, 95);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            height: 9px;
+            width: 50px;
+            margin-left: 7px;
+            margin-top: -7px;
+        }
+        #ads_bar{
+            margin-left: 160px;
+            margin-top: 100px;
+        }
+        .ads{
+            height: 210px;
+            width:300px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+        }
+        .ads>img{
+            height: 60%;
+            width: 100%;
+        }
+        .ads>div>h4{
+            margin-left: 5px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 4px;
+        }
+        /* .ads>div>p{
+            font-size: 14px;
+            border: 1px solid red;
+           padding-bottom: -10px;
+        } */
+        .ads>p{
+            margin-left: 5px;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 5pxpx;
+           color: rgb(129, 129, 129) ; 
+        }
+        #ads_div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #ads_para{
+            border: 1px solid rgb(64, 134, 213);
+            height: 20px;
+            width: 75px;
+            text-align: center;
+            font-size: 14px;
+            pad: 3px;
+            margin-right: 2px;
+            color: rgb(64, 134, 213);
+            border-radius: 3px;
+            margin-top: 4px;
+        }
+        #ads_heading{
+            margin-left: 160px;
+            margin-top: 60px;
+            display: flex;
+            margin-bottom: -70px;
+        }
+        /* #ads_heading>h3{
+
+        } */
+        #ads_heading>div{
+            width: 65px;
+            height: 23px;
+            border: 1px solid black;
+            margin-left: 13px;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+        #ads_heading>div>img{
+            height: 100%;
+            width: 100%;
+            margin-bottom: 2px;
+            padding-right: 5px;
+        }
+        #iframe{
+            margin-left: 160px;
+            margin-top: 70px;
+        }
+        #yt_head{
+            margin-left: 160px;
+            margin-top: 30px;
+            margin-bottom: -60px;
+        }
+        #gif{
+            width: 300;
+            margin-left: 160px;
+            margin-top: 60px;
+        }
+        #gif>img{
+            height: auto;
+            width: 100%;
+        }
+        #head_main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <!-- bar1 start here................................    -->
+     <div id="container1">
+         
+     </div>
+
+<!-- bar2 start here ........................... -->
+    <div id="container2">
+
+       <div id="categories1">
+          <p class="p1" id="health">Health</p>
+          <p class="p1" id="india">India</p>
+          <p class="p1" id="world">World</p>
+          <p class="p1" id="politics us">Politics</p>
+          <p class="p1" id="auto">Auto</p>
+          <p class="p1" id="opinion">Opnion</p>
+          <p class="p1" id="sports">Sports</p>
+          <p class="p1" id="cricket">Cricket</p>
+          <p class="p1" id="entertainment">Entertainment</p>
+          <p id="tech">Tech</p>
+       </div>
+           
+       <div id="categories2">
+         <p id="crypto">Crypto</p>
+        <div id="netra"><img  src="https://www.firstpost.com/static/images/netrasuraksha_L2_103x25px.jpg" alt=""></div> 
+       </div>
+
+    </div>
+<div id="merg">
+
+   <!--left side news bar start here ................................. -->
+   <div id="container3">
+       <!-- <h1 id="main_heading">THE BIG STORY</h1>
+       <div id="yellow"></div>
+       <div id="black"></div> -->
+          
+</div>
+ <!--left side news bar end here ................................. -->
+
+<div id="email_box">
+
+   <!-- email input div start here.............. -->
+<div id="email">
+    <h3>Subscribe to our foreign <br> policy newsletter</h3>
+    <p id="p1">Sign up for a weekly curated briefing of the <br> most important strategic affairs stories from <br> across the world.</p>
+    <p id="p2">Email Address</p>
+    <input id="email_value" type="text">
+    <p id="p3">Subscribe</p><br>
+ </div>
+ <!-- email input div end here.............. -->
+ <h3 id="most_h3">MOST READ</h3>
+ <div id="most"></div>
+ <!-- right side news bar start here.......... -->
+ <div id="news_bar">
+
+ </div>
+<!-- right side news bar end here.......... -->
+<div id="ads_heading">
+    <h3>PROMOTED CONTENT</h3>
+    <div><img id="imgad" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Outbrain_Logo.png" alt=""></div>
+</div>
+<!-- right side ads bar start here.......... -->
+<div id="ads_bar">
+
+<div class="ads">
+    <img src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjY3YWZjMTkzNTcxNmYwYzA1NzhkOTY5YWE5YzBiNTQ3OWEyODhhZTlhZjhiNjczZDJiYmY5ZDcyNDc2ZWQxMzEiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp" alt="">
+    <div id="ads_div">
+        <h4>Electricity ka bill hai Bachana <br> toh Luminous Solar hi lagana</h4>
+        <div id="ads_para">Learn More</div>
+    </div>
+    <p>Luminous India</p>
+</div>
+<div class="ads">
+    <img src="https://images.outbrainimg.com/transform/v3/eyJpdSI6Ijk5ZWFlMzYxY2Y1YTY4YTI0MTdhOTNiZDM0OTFhNWQ2NDM3OWJjNWM4OWE0OWE5NTU0YTI0YzU1MzllOGViYjUiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjaCI6NzYyNjg1ODQ2LCJjcyI6MCwiZiI6NH0.webp" alt="">
+    <div id="ads_div">
+        <h4>The Daughter Of A Mute <br> Mother & Vegetable Vendor <br> Needs Your Help</h4>
+        <div id="ads_para">Donate Now</div>
+    </div>
+    <p>Ketto</p>
+</div>
+<div class="ads">
+    <img src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjdkYjA0MzVkM2IxNmEzOTE3ZDMyMzAxZWZhMTc2YjM1YTk4YmJmNThhY2E0MTFiMzZjOTU3MWEzNTY3ZDc2NmEiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp" alt="">
+    <div id="ads_div">
+        <h4>Breathing easier? Innovative <br> Device Inspires Expert</h4>
+        <div id="ads_para">Learn More</div>
+    </div>
+    <p>Apomedisan India</p>
+</div>
+<div class="ads">
+    <img src="https://images.outbrainimg.com/transform/v3/eyJpdSI6ImZiNDQwYzMzYzk1N2JkZmVjZDk1Y2FmOGM1Y2E5NTk5Yjg1ODljZGJkMTIyMGE2NTVmMmRlY2FkNDkyOThjYTciLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp" alt="">
+    <div id="ads_div">
+        <h4>Public Speaking Classes for <br> kids (4 to 14 years)</h4>
+        <div id="ads_para">Learn More</div>
+    </div>
+    <p>PlanetSpark</p>
+</div>
+
+ </div>
+<!-- right side ads bar end here.......... -->
+<h3 id="yt_head">#9MonthsSeason6: Episode 1 - <br> Smart Parenting</h3>
+<iframe id="iframe" width="300" height="210"
+src="https://www.youtube.com/embed/cpMa2ybJefk?autoplay=1&mute=1">
+</iframe>
+
+<div id="gif"><img  src="https://www.firstpost.com/static/images/news18_crypto.gif" alt=""></div>
+</div>
+
+</div>
+ 
+
+    
+</body>
+</html>
+<script type="module" src="./scripts/index.js">
+
+
+
+</script>
